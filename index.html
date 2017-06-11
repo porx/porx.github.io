@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Boris Bezenšek</title>
-    <meta name="description" content="Makedonski roštilj - Bjelovar">
+    <meta name="description" content="Boris Bezenšek - CV">
     <meta name="keywords" content="boris bezenšek,web developer hrvatska,web programer,web developer bjelovar">
     <meta name="author" content="Boris Bezenšek">
     <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="images/favicon-192x192.png" sizes="192x192">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Roboto+Slab:400,700&amp;subset=latin-ext" rel="stylesheet">
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="font-awesome/css/fontello.css">
+    <link rel="stylesheet" href="font/css/fontello.css">
     <link rel="stylesheet" href="style.css">
 
     <!--[if lt IE 9]>
@@ -22,147 +21,140 @@
   </head>
 
   <body>
-    <div class="jumbotron">
+    <div class="sidebar">
       <div class="container">
-        <div class="col-md-6 col-md-offset-2 col-xs-12">
+        <div class="title">
           <h1>Boris Bezenšek,</h1>
           <h3>univ. bacc. bibl.</h3>
         </div>
-        <div class="col-md-2 col-sm-4 col-sm-offset-0 col-xs-6 col-xs-offset-3 text-center">
-          <img class="img-responsive" src="images/slika_2016_narrow_small.jpg" alt="Portrait" width="100%">
+        <div class="text-center portrait">
+          <img src="images/slika_2016.jpg" alt="Portrait" width="100%">
+        </div>
+        <div class="links">
+          <span><a href="#osobni-podaci"><i class="icon-user-circle-o"></i> Osobni podaci</a></span>
+          <span><a href="#radno-iskustvo"><i class="icon-briefcase"></i> Radno iskustvo</a></span>
+          <span><a href="#vjestine"><i class="icon-lightbulb"></i> Vještine</a></span>
+          <span><a href="https://hr.linkedin.com/in/boris-bezenšek-102127a8"><i class="icon-linkedin"></i> LinkedIn</a></span>
         </div>
       </div>
     </div>
 
-    <section id="o-meni" class="container">
-      <div class="row">
-        <div class="col-sm-8 col-sm-offset-2 col-xs-12 text-center">
-          <p>Web developer, dizajner, grafičar, knjižničar.<br/> Vješt i snalažljiv pri upoznavanju s novim tehnologijama
-          i okruženjima. Odgovoran, marljiv i uporan.</p>
-        </div>
-      </div>
-    </section>
+    <div class="content">
+      <section id="o-meni" class="panel text-center">
+        <p>Web developer, dizajner, grafičar, knjižničar.<br/> Vješt i snalažljiv pri upoznavanju s novim tehnologijama
+        i okruženjima. Odgovoran, marljiv i uporan.</p>
+      </section>
 
-    <section id="podaci-obrazovanje" class="container">
-      <div class="row">
-        <div class="col-sm-7">
-          <div id="osobni-podaci">
-            <div class="row">
-              <div class="col-sm-6 col-left">Ime i prezime:</div>
-              <div class="col-sm-6 text-right">Boris Bezenšek</div>
-            </div>
-            <div class="row">
-              <div class="col-sm-6 col-left">Datum rođenja:</div>
-              <div class="col-sm-6 text-right">26. veljače 1985.</div>
-            </div>
-            <div class="row">
-              <div class="col-sm-6 col-left">Mjesto rođenja:</div>
-              <div class="col-sm-6 text-right">Bjelovar</div>
-            </div>
-            <div class="row">
-              <div class="col-sm-6 col-left">Adresa:</div>
-              <div class="col-sm-6 text-right">Jakova Gotovca 42, Bjelovar</div>
-            </div>
-            <div class="row">
-              <div class="col-md-6 col-left">Telefon:</div>
-              <div class="col-md-6 text-right">098 / 135 – 65 – 70</div>
-            </div>
-            <div class="row">
-              <div class="col-md-6 col-left">E – mail:</div>
-              <div class="col-md-6 text-right">boris.bezensek@gmail.com</div>
-            </div>
+      <section id="podaci-obrazovanje" class="container">
+        <div class="row">
+          <div id="osobni-podaci" class="panel">
+            <p>
+              <span class="left">Ime i prezime:</span>
+              <span class="right">Boris Bezenšek</span>
+            </p>
+            <p>
+              <span class="left">Datum rođenja:</span>
+              <span class="right">26. veljače 1985.</span>
+            </p>
+            <p>
+              <span class="left">Mjesto rođenja:</span>
+              <span class="right">Bjelovar</span>
+            </p>
+            <p>
+              <span class="left">Adresa:</span>
+              <span class="right">Jakova Gotovca 42, Bjelovar</span>
+            </p>
+            <p>
+              <span class="left">Telefon:</span>
+              <span class="right">098 / 135 – 65 – 70</span>
+            </p>
+            <p>
+              <span class="left">E – mail:</span>
+              <span class="right">boris.bezensek@gmail.com</span>
+            </p>
           </div>
-        </div>
-        <div class="col-sm-5">
-            <div id="obrazovanje">
+
+          <div id="obrazovanje" class="panel">
             <h4>Obrazovanje:</h4>
-            <p><b>2006. – 2010.</b></p>
+            <p class="left"><b>2006. – 2010.</b></p>
             <p>Sveučilište u Zadru, Preddiplomski studij knjižničarstva</p>
-            <p><b>1999. – 2003.</b></p>
+            <p class="left"><b>1999. – 2003.</b></p>
             <p>Tehnička škola Bjelovar, Elektrotehničar – Tehničar za računalstvo</p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="radno-iskustvo" class="container">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <h4>Radno iskustvo:</h4>
-          <div class="row">
-            <div class="col-sm-4 col-left">09. 2016. - 11.2016.</div>
-            <div class="col-sm-8">Parpar d.o.o., Bjelovar - web developer</div>
+      <section id="radno-iskustvo" class="panel">
+        <div class="row">
+            <h4>Radno iskustvo:</h4>
+            <p>
+              <span class="left">03. 2017. - </span>
+              <span class="right">Adscanner d.o.o., Zagreb - front end developer</span>
+            </p>
+            <p>
+              <span class="left">09. 2016. - 11.2016.</span>
+              <span class="right">Parpar d.o.o., Bjelovar - web developer</span>
+            </p>
+            <p>
+              <span class="left">04. 2016. - 08.2016.</span>
+              <span class="right">Cup Up d.o.o., Bjelovar - web developer</span>
+            </p>
+            <p>
+              <span class="left">10. 2015. - 03.2016.</span>
+              <span class="right">Sveučilište Sjever - pomoćni knjižničar (stručno osposobljavanje)</span>
+            </p>
+            <p>
+              <span class="left">11. 2011. - 03.2015.</span>
+              <span class="right">Samozaposlen – vlasnik obrta za trgovinu i termotisak</span>
+            </p>
+            <p>
+              <span class="left">2006. - 2010.</span>
+              <span class="right">Studentski poslovi</span>
+            </p>
           </div>
-          <div class="row">
-            <div class="col-sm-4 col-left">04. 2016. - 08.2016.</div>
-            <div class="col-sm-8">Cup Up d.o.o., Bjelovar - web developer</div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4 col-left">10. 2015. - 03.2016.</div>
-            <div class="col-sm-8">Sveučilište Sjever - pomoćni knjižničar (stručno osposobljavanje)</div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4 col-left">11. 2011. - 03.2015.</div>
-            <div class="col-sm-8">Samozaposlen – vlasnik obrta za trgovinu i termotisak</div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4 col-left">2006. - 2010.</div>
-            <div class="col-sm-8">Studentski poslovi</div>
+      </section>
+
+      <section id="vjestine" class="panel">
+        <div class="row">
+          <div>
+            <h4>Vještine:</h4>
+            <p>
+              <span class="left">Računalne:</span>
+              <span class="right"> MS Windows, Linux, MS Office, Open Office</span>
+            </p>
+            <p>
+              <span class="left">Grafika:</span>
+              <span class="right"> Gimp - rasterska grafika, Inkscape - vektorska grafika</span>
+            </p>
+            <p>
+              <span class="left">Programiranje:</span>
+              <span class="right"> HTML, CSS, JS, PHP, Wordpress, Bootstrap, Foundation, Mustache, Angular2, Python</span>
+            </p>
+            <p>
+              <span class="left">Informacijske:</span>
+              <span class="right"> Pretraživanje različith izvora informacija, samostalno učenje</span>
+            </p>
+            <p>
+              <span class="left">Strani jezici:</span>
+              <span class="right"> Engleski</span>
+            </p>
+            <p>
+              <span class="left">Vozačka dozvola:</span>
+              <span class="right"> AM, B, F, G</span>
+            </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="vjestine" class="container">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <h4>Vještine:</h4>
-          <div class="row">
-            <div class="col-sm-3 col-left">Računalne:</div>
-            <div class="col-sm-9"> MS Windows, Linux, MS Office, Open Office</div>
-          </div>
-          <div class="row">
-            <div class="col-sm-3 col-left">Grafika:</div>
-            <div class="col-sm-9"> Gimp - rasterska grafika, Inkscape - vektorska grafika</div>
-          </div>
-          <div class="row">
-            <div class="col-sm-3 col-left">Programiranje:</div>
-            <div class="col-sm-9"> HTML, CSS, JS, jQuery, PHP, Wordpress, Bootstrap, Python</div>
-          </div>
-          <div class="row">
-            <div class="col-sm-3 col-left">Informacijske:</div>
-            <div class="col-sm-9"> Pretraživanje različith izvora informacija, samostalno učenje</div>
-          </div>
-          <div class="row">
-            <div class="col-sm-3 col-left">Strani jezici:</div>
-            <div class="col-sm-9"> Engleski</div>
-          </div>
-          <div class="row">
-            <div class="col-sm-3 col-left">Vozačka dozvola:</div>
-            <div class="col-sm-9"> AM, B, F, G</div>
+
+      <section id="footer" class="panel">
+        <div class="row">
+          <div class="text-center">
+            <p><small>&copy; Boris Bezenšek</small></p>
           </div>
         </div>
-      </div>
-    </section>
-
-
-    <section id="footer" class="container-fluid">
-      <div class="row">
-        <div class="col-sm-4 text-center">
-          <p><small>&copy; Boris Bezenšek</small></p>
-        </div>
-
-        <div class="col-sm-4 text-center">
-        </div>
-
-        <div class="col-sm-4 text-center">
-          <a href="https://hr.linkedin.com/in/boris-bezenšek-102127a8"><i class="icon-linkedin" aria-hidden="true"></i></a>
-        </div>
-      </div>
-    </section>
-
-    <script src="js/jquery-3.1.1.min.js"></script>
-  	<script async src="bootstrap/js/bootstrap.min.js"></script>
+      </section>
+    </div>
   </body>
 
 </html>

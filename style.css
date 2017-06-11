@@ -1,13 +1,74 @@
+/* Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/* Style */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 html, html a {
   -webkit-font-smoothing: antialiased;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
 
 body {
-  background-color: #96D7D2;
-  color: #333;
+  background-color: #FFA800;
+  color: #1C1C1C;
   font-family: 'Lato', sans-serif;
   font-size: 20px;
+  line-height: 1.3;
 }
 
 section {
@@ -20,36 +81,99 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 25px;
 }
 
+h1 {
+  font-size: 2.4rem;
+}
+
 h3 {
-  font-size: 2.5em;
+  font-size: 2.2rem;
 }
 
 h4 {
-  font-size: 1.1em;
+  font-size: 1.5rem;
   font-weight: 300;
   margin-bottom: 15px;
 }
 
+p {
+  margin-bottom: 7px;
+}
+
 a {
-  color: #F15E64;
+  color: #FFA800;
+  text-decoration: none;
 }
 
 a:hover {
-  color: #333;
+  font-weight: 500;
 }
 
-.jumbotron {
-  background-color: #F15E64;
-  color: #FFF;
+.sidebar {
+  background-color: #1C1C1C;
+  color: #FFA800;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 25%;
+  overflow: auto;
 }
 
-.jumbotron img {
-  border: 8px solid #FFF;
+.sidebar img {
+  border: 8px solid #FFA800;
+  width: 50%;
+  border-radius: 50%;
+  max-width: 250px;
+  margin: 50px auto;
+  display: inline-block;
 }
 
-.jumbotron h3 {
+.sidebar h3 {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
+}
+
+.sidebar .links span {
+  transform: scale(1);
+  transition: .2s;
+}
+
+.sidebar .links span:hover {
+  transform: scale(1.005);
+  transition: .2s;
+}
+
+.content {
+  position: absolute;
+  right: 0;
+  width: 75%;
+}
+
+.sidebar,
+.content {
+  padding: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.panel {
+  padding: 25px;
+}
+
+.panel span {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.panel .right {
+  width: 60%
+}
+
+.panel .left {
+  width: 35%;
+  font-weight: 700;
 }
 
 #o-meni {
@@ -57,78 +181,108 @@ a:hover {
 }
 
 #o-meni, #vjestine {
-  background-color: #FFBB87;
-}
-
-#o-meni .col-xs-12, #vjestine .col-md-8, #osobni-podaci, #obrazovanje, #radno-iskustvo .col-md-8 {
-  padding: 35px;
-}
-
-#podaci-obrazovanje .col-sm-7 {
-  padding-left: 0;
-}
-
-#podaci-obrazovanje .col-sm-5 {
-  padding-right: 0;
+  background-color: #1C1C1C;
+  color: #FFA800;
 }
 
 #osobni-podaci, #obrazovanje, #radno-iskustvo {
-  background-color: #FFF;
+  background-color: #D48C00;
 }
 
-#osobni-podaci .row {
-  margin-top: 5px;
+#podaci-obrazovanje::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-#osobni-podaci .col-left {
-  font-family: 'Roboto Slab', serif;
+#osobni-podaci {
+  float: left;
+  width: 54%;
+  margin-right: 3%;
 }
 
-.col-left {
-  font-weight: 700;
-  text-align: left;
-}
-
-.col-md-8 .row {
-  margin-top: 5px;
+#obrazovanje {
+  float: left;
+  width: 43%
 }
 
 #footer {
   padding-bottom: 15px;
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 1020px) {
+  .sidebar span {
+    display: block;
+    margin-top: 15px;
+  }
+
   #osobni-podaci, #obrazovanje {
-    min-height: 350px;
+    min-height: 420px;
   }
 
   #osobni-podaci {
-    padding-top: 80px;
+    padding-top: 90px;
   }
 }
 
-@media all and (max-width: 768px) {
-  #podaci-obrazovanje .col-sm-7, #podaci-obrazovanje .col-sm-5 {
-    background-color: #FFF;
+@media all and (max-width: 1020px) {
+  .sidebar,
+  .content {
+    width: 100%;
+    position: static;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
   }
 
-  #podaci-obrazovanje .col-sm-5 {
+  .sidebar .title,
+  .sidebar .portrait {
+    display: inline-block;
+    width: 40%;
+    margin-bottom: 30px;
+  }
+
+  .sidebar .portrait {
+    text-align: right;
+  }
+
+  .sidebar img {
+    margin: 0;
+  }
+
+  .sidebar span {
+    margin: 20px 0;
+    display: inline-block;
+    width: 23%;
+  }
+
+  #osobni-podaci,
+  #obrazovanje {
+    float: none;
+    width: 100%
+  }
+
+  #obrazovanje {
     margin-top: 30px;
   }
 
-  .col-sm-6.text-right, .col-md-6.text-right {
-    text-align: left;
+  .panel .left,
+  .panel .right {
+    width: 100%;
   }
 
-  h3 {
-    font-size: 1.2em;
-  }
-
-  .jumbotron {
-    text-align: center;
-  }
-
-  .jumbotron img {
+  .panel .left {
     margin-top: 20px;
+  }
+}
+
+@media all and (max-width: 1020px) {
+  .sidebar .title,
+  .sidebar .portrait,
+  .sidebar span {
+    display: block;
+    width: 100%;
+    text-align: center;
   }
 }
